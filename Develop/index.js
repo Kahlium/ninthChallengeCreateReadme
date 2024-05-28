@@ -16,11 +16,6 @@ const questions = [
     },
     {
         type: "input",
-        message: "Write down the table of contents of the project",
-        name: "contentTable"
-    },
-    {
-        type: "input",
         message: "Write down the installation instructions of the project",
         name: "installation"
     },
@@ -57,10 +52,55 @@ const questions = [
     },
 ];
 
+const createReadme = ({ title, description, installation, usage, guidelines, test, license, username, email}) =>
+{
+` # ${title}
+
+## Description
+
+${description}
+
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [Tests](#tests)
+
+
+## Installation
+
+${installation}
+
+## Usage
+
+${usage}
+
+## Contributing
+
+${guidelines}
+
+## Tests
+
+${test}
+
+## Questions
+
+For any questions, please contact me through my email: ${email} 
+
+My github: https://github.com/${username}
+`
+}
+
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) 
 {
+    inquirer
+        .prompt(questions)
 
+        .then((response) => {
+            //Finish this in a bit, figure it out first
+            fs.writeFile(fileName, )
+        })
 }
 
 // TODO: Create a function to initialize app
