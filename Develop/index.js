@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs")
+const generateMarkdown = require('../Develop/Utils/generateMarkdown.js')
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -89,7 +90,7 @@ For any questions, please contact me through my email: ${email}
 My github: https://github.com/${username}
 
 ## Licence
-${license}
+${generateMarkdown(license)}
 `;
 
 // TODO: Create a function to write README file
