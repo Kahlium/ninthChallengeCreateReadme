@@ -42,7 +42,7 @@ const questions = [
     },
     {
         type: "input",
-        message: "Write down your usernamne",
+        message: "Write down your username",
         name: "username"
     },
     {
@@ -88,23 +88,33 @@ ${test}
 For any questions, please contact me through my email: ${email} 
 
 My github: https://github.com/${username}
+
+## Licence
+${license}
 `
-}
+};
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) 
+function writeReadme(fileName) 
 {
+    fileName = "testREADME.md"
+
     inquirer
         .prompt(questions)
 
-        .then((response) => {
-            //Finish this in a bit, figure it out first
-            fs.writeFile(fileName, )
+        .then((answers) => {
+            const createRDME = createReadme(answers)
+
+            fs.writeFile(fileName, createRDME, (err) => 
+                err ? console.log(err) : console.log('Success')
+        )
         })
 }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    writeReadme()
+}
 
 // Function call to initialize app
 init();
