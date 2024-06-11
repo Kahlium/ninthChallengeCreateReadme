@@ -53,7 +53,6 @@ const questions = [
 ];
 
 const createReadme = ({ title, description, installation, usage, guidelines, test, license, username, email}) =>
-{
 ` # ${title}
 
 ## Description
@@ -91,8 +90,7 @@ My github: https://github.com/${username}
 
 ## Licence
 ${license}
-`
-};
+`;
 
 // TODO: Create a function to write README file
 function writeReadme(fileName) 
