@@ -1,44 +1,13 @@
-# sixthChallengeCreateReadme
-7th Module Challenge Boot Camp
+# ninthChallengeCreateReadme
+9th Module Challenge Boot Camp
 
 ## Description
+A README generator using the npm package "inquirer" to ask for the details of the README.
 
-d
+## Instructions
+On the terminal, npm install to install the packages and then initialize index.js with node index.js. The terminal will ask for the title of the project, description of the project, installation instructions, usage information, contribution guidelines, test instructions, the license of the project, one's github username and one's e-mail. After answering everything a README.md will be created
 
-## Table of Contents
-* [Installation](#installation)
-* [Usage](#usage)
-* [Contributing](#contributing)
-* [Tests](#tests)
+## Credits
+Used class activities for reference during the making of the homework
 
-
-## Installation
-
-d
-
-## Usage
-
-d
-
-## Contributing
-
-d
-
-## Tests
-
-d
-
-## Questions
-
-For any questions, please contact me through my email: d 
-
-My github: https://github.com/d
-
-## Licence
-# MIT License
-
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-  https://opensource.org/license/MIT
-
-  License section
-
+License Badges: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba#the-mit-license
